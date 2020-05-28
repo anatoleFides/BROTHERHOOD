@@ -1,0 +1,6 @@
+.vector-smart-object-1 { background-position: -10px -0px; width: 81px; height: 81px; }
+.vector-smart-object-2 { background-position: -101px -0px; width: 81px; height: 81px; }
+.vector-smart-object-3 { background-position: -10px -91px; width: 81px; height: 81px; }
+.vector-smart-object-4 { background-position: -101px -91px; width: 81px; height: 81px; }
+.vector-smart-object-5 { background-position: -10px -182px; width: 81px; height: 81px; }
+.vector-smart-object-6 { background-position: -101px -182px; width: 81px; height: 81px; }

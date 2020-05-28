@@ -1,0 +1,783 @@
+@font-face {
+	font-family: "CenturyGothicRegular";
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+	url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/*ALL DOCUMENT*/
+h1{
+	font-size: 44px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 60px;
+	position: relative;
+}
+h1:before{
+	content: "";
+	position: absolute;
+	width: 77px;
+	height: 5px;
+	left: 50%;
+	transform: translateX(-37px);
+	bottom: -22px;
+}
+h1:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	bottom: -22px;
+}
+
+
+
+/*HEADER*/
+header{
+	background: #000000;
+	padding-top: 7px;
+}
+.header{
+	font-family: "CenturyGothicRegular";
+	background: url('../images/header_background.png');	
+}
+
+.navbar{
+	margin: 0;
+	border-radius: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+}
+.navbar-header img{
+	margin: 7.5px 0;
+}
+.navbar-nav{
+	margin: 0;
+}
+.navbar-right{
+	margin: 0;
+}
+.basket{
+	padding: 10px 30px;
+	color: #fbc620;
+	font-size: 18px;
+	background: #000000;
+	display: inline-flex;
+	align-items: center;
+}
+.basket span{
+	font-weight: 800;
+}
+.basket a{
+	display: block;
+	border-radius: 50%;
+	width: 37px;
+	height: 37px;
+	background: #fbc620;
+	position: relative;
+}
+.basket a:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-45%, -55%);
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -46px;
+	width: 16px;
+	height: 16px; 
+}
+.basket p{
+	margin: 0 0 0 10px;
+}
+.language_ul{
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 0 0 158px;
+	padding: 0;
+}
+.language_ul li{
+	list-style: none;
+	margin: 0 1px;
+	background: #000000;
+	padding: 6.5px 0;
+}
+.language_ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+	padding: 6px 20px;
+}
+.language_ul li a:hover{
+	color: #fcc721;
+}
+.main_menu{
+	font-family: "CenturyGothicRegular";
+	padding:  7.5px 0 10px;
+}
+.main_menu_background{
+	background: #2F4F4F;
+}
+#main_menu_collapse{
+	padding: 0;
+	float: none!important;
+/*	display: block;*/
+	margin: 0;
+	border-radius: 0;
+}
+#main_menu{
+	float: none!important;
+}
+#main_menu li{
+	background: rgba(0, 0, 0, 0);
+	padding: 0;
+	border-right: 1px solid #111111;
+	border-left: 1px solid #111111;
+}
+#main_menu li a{
+	padding: 18.5px 0;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background: #fbc620;
+}
+#main_menu li:hover a, #main_menu li a:focus{
+	color: #000;
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+	.language_ul{
+		margin-left: 60px;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 768px){
+	.language_ul{
+		margin: 0 10px 0 0;
+		float: right;
+	}
+}
+@media screen and (max-width: 768px){
+	.language_ul{
+		margin: 0;
+		float: left;
+	}
+	.language_ul li a{
+		padding: 5px;
+	}
+	
+	.navbar-right{
+		float: right;
+	}
+	.basket{
+		padding: 0 20px 0 0 ;
+	}
+	.basket p{
+		display: none;
+	}
+	#main_menu{
+		flex-direction: column;
+	}
+}
+
+/*MainMenu*/
+.navTab_mainMenu{
+	background: #111;
+	
+}
+.nav-tabs{
+	border-bottom: none;
+	/*margin-left: 333px;*/
+}
+
+.nav-tabs>li{
+	margin-bottom: 0;
+	margin-right: 20px;
+	
+}
+.nav-tabs>li>a{
+	font-size: 24px;
+	font-family: "CenturyGothicRegular";
+	text-transform: uppercase;
+	border-radius: 0;
+	margin-right: 0;
+	padding: 11px 20px;
+}
+.nav-tabs>li>a, .nav-tabs>li.active>a{
+	border: 1px solid rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+	
+}
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	border: 1px solid rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+}
+#navTab_mainMeu{
+	transform: translate(0, 10px);
+}
+#tacticalMenu{
+	color: #fbc620;
+}
+#tacticalMenu:hover, #tacticalMenu:focus{
+	border: 1px solid #fbc620;
+}
+#highlandMenu{
+	color: #3f8db9;
+}
+#highlandMenu:hover, #highlandMenu:focus{
+	border: 1px solid #3f8db9;
+}
+#simpleMenu{
+	color: #696969;
+}
+#simpleMenu:hover, #simpleMenu:focus{
+	border: 1px solid #696969;
+}
+
+
+
+/*MAIN*/
+.main{
+	position: relative;
+	background: #fbc620;
+}
+.main:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/main1.png');
+	width: 100%;
+	height: 100%;
+	
+}
+.main:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/main2.png');
+	width: 100%;
+	height: 100%;
+	
+}
+.tabpanel_pad{
+	font-family: "CenturyGothicRegular";
+	padding: 60px 0 212px;
+}
+#tactical{
+	text-transform: uppercase;
+	position: relative;
+	z-index: 10;
+}
+#tactical:before{
+	content: "";
+	position: absolute;
+	background: url('../images/mainFace.png') no-repeat;
+	width: 348px;
+	height: 100%;
+	top: 39px;
+	left: 35%;
+}
+#tactical:after{
+	content: "";
+	position: absolute;
+	background: url('../images/mainProfil.png') no-repeat;
+	width: 136px;
+	height: 100%;
+	top: 94px;
+	left: 90%;
+}
+#tactical ul{
+	padding-left: 40px;
+}
+#tactical h4{
+	font-size: 24px;
+	color: #fff;
+	margin: 0;
+}
+#tactical h2{
+	font-size: 44px;
+	font-weight: 800;
+	margin: 19px 0 36px;
+}
+#tactical p{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+#tactical ul{
+	margin: 45px 0 63px 0;
+}
+#tactical ul li{
+	list-style: none;
+	font-weight: 800;
+	position: relative;
+	margin-bottom: 31px;
+	text-transform: none;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+#tactical ul li:before{
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -42px;
+	width: 28px;
+	height: 28px;
+	border: 1px solid #fff;
+	
+}
+#tactical ul li:after{
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: -44px;
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -0px;
+	width: 38px;
+	height: 36px;
+}
+#tactical span{
+	font-weight: 800;
+}
+.Href{
+	padding: 0 38px 8px 0;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+.Href:before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 169px;
+	width: 23px;
+	height: 23px;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	transform: rotate(-35deg) skew(20deg);
+	
+
+}
+.Href:after{
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 181px;
+	height: 5px;
+	background: #fff;
+}
+.ulCircle{
+	display: flex;
+	justify-content: space-between;
+}
+.Href:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.blackCircle{
+	width: 272px;
+	height: 272px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	position: relative;
+	padding: 20px;
+	margin-right: 105px;
+	z-index: 15;
+	transform: translateY(10%);
+	
+}
+.blackCircle:before{
+	content: "";
+	position: absolute;
+	width: 352px;
+	height: 1px;
+	left: -40px;
+	top: 50%;
+	background: #000;
+}
+.blackCircle:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 352px;
+	left: 50%;
+	top: -40px;
+	background: #000;
+}
+.whiteCircle{
+	width: 229px;
+	height: 229px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	position: relative;
+}
+.whiteCircle:before{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 74px;
+	background: #fff;
+	transform: skew(-60deg);
+	top: -20px;
+	left: 270px;	
+}
+.whiteCircle:after{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 52px;
+	background: #fff;
+	transform: skew(75deg);
+	top: 30px;
+	left: -95px;
+}
+.circle{
+	position: relative;
+	width: 219px;
+	height: 219px;
+	border-radius: 50%;
+	background: url('../images/mainCircle.png') no-repeat;
+}
+
+/*FIXED*/
+.fixedContacts{
+	font-family: "CenturyGothicRegular";
+	position: fixed;
+	top: 217px;
+	right: 20px;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+}
+
+.fixedContacts div{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+}
+.fixedContacts p{
+	font-size: 16px;
+	color: #fbc620;
+	background: radial-gradient(ellipse at center, #696969, #000);
+	padding: 7px 25px 7px 10px;
+	margin: 0;
+	transform: translateX(18px);
+	display: none;
+}
+.fixedContacts>div:hover p{
+	display: block;
+}
+
+.fixedContacts>div>a{
+	display: block;
+	position: relative;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	background: #fbc620;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+.fixedContacts>div>a:hover{
+	background: #fff;
+}
+.fixedContacts>div>a:before{
+	content: "";
+	position: absolute;
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -72px;
+	width: 16px;
+	height: 16px;
+	top: 10px;
+	left: 10px;
+}
+.fixedContacts>div+div>a:before{
+	content: "";
+	position: absolute;
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -119px;
+	width: 14px;
+	height: 16px;
+	top: 9px;
+	left: 12px;
+}
+.fixedContacts>div+div+div>a:before{
+	content: "";
+	position: absolute;
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -98px;
+	width: 15px;
+	height: 11px;
+	top: 13px;
+	left: 11px;
+}
+
+/*TISSUE*/
+.tissue{
+	font-family: "CenturyGothicRegular";
+	background: #000000 url('../images/tissue.png');
+	height: 636px; /*убрать*/
+}
+.tissue h1{
+	color: #fff;
+	margin-bottom: 65px;
+}
+.tissue h1:before{
+	background: #111111;
+}
+.tissue h1:after{
+	background: #111111;
+}
+/*carusel*/
+#tissue_slider{
+	padding: 0 97px;
+	z-index: 20;
+	position: relative;
+	
+}
+#tissue_slider div{
+	margin-bottom: 15px; /*уточнить*/
+}
+.tissueSprite{
+	display: flex;
+}
+.tissueSprite p{
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+	background: url('../images/spriteBROTHERHOOD_2.png') -10px -0px;
+ }
+ .tissueSprite p+p{
+ 	background-position: -101px -0px;
+ }
+.tissueSprite p+p+p{
+ 	background-position: -10px -91px;
+ }
+ .tissueSprite p+p+p+p{
+ 	background-position: -101px -91px;
+ }
+ .tissueSprite p+p+p+p+p{
+ 	background-position: -10px -182px;
+ }
+ .tissueSprite p+p+p+p+p+p{
+ 	background-position: -101px -182px;
+ }
+#tissue_slider h2{
+	margin: 0 0 35px 0;
+	font-size: 34px;
+	color: #fff;
+	text-transform: uppercase;
+}
+#tissue_slider h2 span{
+	color: #fbc620;
+}
+#tissue_slider p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+}
+#tissue_slider p span{
+	text-transform: uppercase;
+	color: #fbc620;
+	font-size: 20px;
+	font-family: "CenturyGothicRegular";
+}
+#tissue_slider p:nth-child(3){
+	padding: 40px 0 38px 0;
+}
+#tissue_slider h4{
+	margin: 0 0 18px 0;
+	text-transform: uppercase;
+	color: #fbc620;
+	font-size: 20px;
+	font-family: "CenturyGothicRegular";
+}
+.HrefYellow{
+	color: #fbc620;
+}
+.HrefYellow:before{
+	border-right: 5px solid #fbc620;
+	border-bottom: 5px solid #fbc620;
+}
+.HrefYellow:after{
+	background: #fbc620;
+}
+ /*carusel arrow*/
+ .owl-theme .owl-nav{
+ 	margin: 0;
+ 	position: absolute;
+ 	width: 100%;
+ 	top: 50%;
+ 	transform: translateY(-28px);
+ }
+ .owl-carousel .owl-nav span{
+	display: none;
+}
+ .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+ 	width: 40px;
+ 	height: 40px;
+ 	position: absolute;
+ 	border-bottom: 3px solid #fbc620; /*нужно #111111 но его не видно*/
+ 	border-left: 3px solid #fbc620;
+ }
+ .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{
+ 	background: #000;
+ }
+ .owl-carousel .owl-nav button.owl-prev:focus, .owl-carousel .owl-nav button.owl-next:focus{
+ 	outline:none;
+ }
+ .owl-carousel .owl-nav button.owl-prev{
+ 	transform: rotate(45deg);
+ 	left: -97px;
+ }
+ .owl-carousel .owl-nav button.owl-next{
+ 	transform: rotate(-135deg);
+ 	right: 97px;
+ }
+
+ /*How we are working*/
+
+.howWorking h1{
+	margin-bottom: 105px;
+}
+.howWorking h1:before{
+	background: #fbc620;
+}
+.howWorking h1:after{
+	background: #fbc620;
+}
+ .working{
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	margin: 200px 0 185px;
+ 	position: relative;
+ }
+ .working:before{
+ 	content: "";
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 1px;
+ 	background: #fbc620;
+ 	top: 50%;
+ }
+ .padTopWorkin{
+ 	margin-top: 0;
+ }
+ .circleYellow{
+	width: 555px;
+	height: 555px;
+	border-radius: 50%;
+	border: 1px solid #fbc620;
+	position: relative;
+ }
+ .circleYellow:before{
+ 	content: "";
+ 	position: absolute;
+ 	width: 1px;
+ 	height: 748px;
+ 	background: #fbc620;
+ 	top: -96px;
+ 	left: 50%;
+ }
+ .yellowLineV:before{
+ 	height: 677px;
+ 	top: -25px;
+ }
+  .circleBlack{
+ 	width: 468px;
+	height: 468px;
+	border-radius: 50%;
+	border: 5px solid #000;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+ }
+.circleWorking{
+	position: relative;
+	width: 459px;
+	height: 459px;
+	border-radius: 50%;
+}
+.imgWorking1{
+	background: url('../images/working1.png') no-repeat;
+}
+.imgWorking2{
+	background: url('../images/working2.png') no-repeat;
+}
+.imgWorking3{
+	background: url('../images/working3.png') no-repeat;
+}
+/*.working>div:first-child{
+	margin-left: 97px;
+}*/
+.working>div:last-child{
+	margin-left: 60px;
+	
+}
+.working h3{
+	font-size: 34px;
+	text-transform: uppercase;
+	font-family: "CenturyGothicRegular";
+	margin: 224px 0 74px 0;
+	position: relative;
+}
+.working h3 span{
+	font-weight: 800;
+	color: #fbc620;
+}
+#number{
+	color: #000;
+	position: absolute;
+	top: 0;
+}
+.number1_3{
+	left: -670px;
+}
+.number2{
+	right: -670px;
+}
+.working p{
+	margin-bottom: 33px;
+	padding-left: 65px;
+	position: relative;
+}
+.working p:before{
+	content: "";
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	border: 1px solid #fbc620;
+	top: -8px;
+	left: 0;
+}
+.working p:after{
+	content: "";
+	position: absolute;
+	top: -17px;
+	left: 0;
+	background: url('../images/spriteBROTHERHOOD_1.png') -10px -0px;
+	width: 38px;
+	height: 36px;
+}
+
+/*MAP*/
+#map{
+	width: 100%;
+	height: 660px;
+	z-index: 5;
+}
