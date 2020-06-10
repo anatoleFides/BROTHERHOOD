@@ -776,8 +776,31 @@ header{
 }
 
 /*MAP*/
+.map{
+	background: #1e1e1e;
+}
+.map h1{
+	margin-bottom: 22px;
+	color: #fff;
+}
+.map h1:before{
+	background: #555555;
+}
+.map h1:before{
+	background: #555555;
+}
+.map h1:after{
+	background: #555555;
+	width: 1140px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 #map{
 	width: 100%;
 	height: 660px;
 	z-index: 5;
 }
+
+/*FOOTER*/
+
+
